@@ -1,0 +1,477 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="LibraryWindowImplPlugin.cpp" />
+    <ClCompile Include="classes\APIStorage.cpp">
+      <Filter>CloApiData</Filter>
+    </ClCompile>
+    <ClCompile Include="classes\APISearchDialogSample.cpp">
+      <Filter>Ui_SearchDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="classes\APISignInDialogSample.cpp">
+      <Filter>Ui_SignInDialog</Filter>
+    </ClCompile>
+    <ClCompile Include="classes\APIUtility.cpp">
+      <Filter>CloApiCommon</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\moc_APISearchDialogSample.cpp">
+      <Filter>Qt_generated</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\moc_APISignInDialogSample.cpp">
+      <Filter>Qt_generated</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>VS_generated</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>VS_generated</Filter>
+    </ClCompile>
+    <ClCompile Include="classes\PLMSettingsSample.cpp">
+      <Filter>Ui_PLM_Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\moc_PLMSettingsSample.cpp">
+      <Filter>Qt_generated</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_CLOFormat.cpp">
+      <Filter>Qt_generated</Filter>
+    </ClCompile>
+    <ClCompile Include="classes\PLMSettingDataSample.cpp">
+      <Filter>Ui_PLM_Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="CLO_PLUGIN\INFOR\Authentication\CLOPLMImplementation.cpp">
+      <Filter>CLO_PLUGIN\INFOR\Authentication</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CLOPLMImplementation.cpp">
+      <Filter>GeneratedFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CLOPLMImplementation.cpp">
+      <Filter>GeneratedFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="CLO_PLUGIN\INFOR\Authentication\CLOPLMSignIn.cpp">
+      <Filter>CLO_PLUGIN\INFOR\Authentication</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CLOPLMSignIn.cpp">
+      <Filter>GeneratedFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CLOPLMSignIn.cpp">
+      <Filter>GeneratedFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="CLO_PLUGIN\INFOR\DesignSuite\DesignSuite.cpp">
+      <Filter>CLO_PLUGIN\INFOR\DesignSuite</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_DesignSuite.cpp">
+      <Filter>GeneratedFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_DesignSuite.cpp">
+      <Filter>GeneratedFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="CLO_PLUGIN\INFOR\Utilities\ComboBoxItem.cpp">
+      <Filter>CLO_PLUGIN\INFOR\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ComboBoxItem.cpp">
+      <Filter>GeneratedFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ComboBoxItem.cpp">
+      <Filter>GeneratedFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="CLO_PLUGIN\INFOR\Products\ProductResultTable.cpp">
+      <Filter>CLO_PLUGIN\INFOR\Products</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ProductResultTable.cpp">
+      <Filter>GeneratedFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ProductResultTable.cpp">
+      <Filter>GeneratedFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="CLO_PLUGIN\INFOR\Products\ProductSearch.cpp">
+      <Filter>CLO_PLUGIN\INFOR\Products</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ProductSearch.cpp">
+      <Filter>GeneratedFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ProductSearch.cpp">
+      <Filter>GeneratedFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="CLO_PLUGIN\INFOR\Products\UpdateProduct.cpp">
+      <Filter>CLO_PLUGIN\INFOR\Products</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_UpdateProduct.cpp">
+      <Filter>GeneratedFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_UpdateProduct.cpp">
+      <Filter>GeneratedFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_PLMResource.cpp">
+      <Filter>GeneratedFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="CLO_PLUGIN\INFOR\Materials\Fabrics\FabricsResultTable.cpp">
+      <Filter>CLO_PLUGIN\INFOR\Materials\Fabrics</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_FabricsResultTable.cpp">
+      <Filter>GeneratedFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_FabricsResultTable.cpp">
+      <Filter>GeneratedFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="CLO_PLUGIN\INFOR\Materials\Fabrics\FabricsSearchDialog.cpp">
+      <Filter>CLO_PLUGIN\INFOR\Materials\Fabrics</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_FabricsSearchDialog.cpp">
+      <Filter>GeneratedFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_FabricsSearchDialog.cpp">
+      <Filter>GeneratedFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="CLO_PLUGIN\INFOR\Materials\Trims\TrimsResultTable.cpp">
+      <Filter>CLO_PLUGIN\INFOR\Materials\Trims</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TrimsResultTable.cpp">
+      <Filter>GeneratedFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TrimsResultTable.cpp">
+      <Filter>GeneratedFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="CLO_PLUGIN\INFOR\Materials\Trims\TrimsSearch.cpp">
+      <Filter>CLO_PLUGIN\INFOR\Materials\Trims</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_TrimsSearch.cpp">
+      <Filter>GeneratedFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_TrimsSearch.cpp">
+      <Filter>GeneratedFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="CLO_PLUGIN\INFOR\Colors\ColorResultTable.cpp">
+      <Filter>CLO_PLUGIN\INFOR\Colors</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ColorResultTable.cpp">
+      <Filter>GeneratedFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ColorResultTable.cpp">
+      <Filter>GeneratedFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="CLO_PLUGIN\INFOR\Colors\ColorSearch.cpp">
+      <Filter>CLO_PLUGIN\INFOR\Colors</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ColorSearch.cpp">
+      <Filter>GeneratedFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ColorSearch.cpp">
+      <Filter>GeneratedFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="CLO_PLUGIN\INFOR\Utilities\Configuration.cpp">
+      <Filter>CLO_PLUGIN\INFOR\Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="CLO_PLUGIN\INFOR\Products\CreateProduct.cpp">
+      <Filter>CLO_PLUGIN\INFOR\Products</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_CreateProduct.cpp">
+      <Filter>GeneratedFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_CreateProduct.cpp">
+      <Filter>GeneratedFiles</Filter>
+    </ClCompile>
+    <ClCompile Include="CLO_PLUGIN\INFOR\Utilities\DirectoryUtil.cpp">
+      <Filter>CLO_PLUGIN\INFOR\Utilities</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="LibraryWindowImplPlugin.h" />
+    <ClInclude Include="classes\APICLODataBase.h">
+      <Filter>CloApiData</Filter>
+    </ClInclude>
+    <ClInclude Include="classes\APIStorage.h">
+      <Filter>CloApiData</Filter>
+    </ClInclude>
+    <ClInclude Include="classes\APIDefine.h">
+      <Filter>CloApiCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="classes\APIUtility.h">
+      <Filter>CloApiCommon</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_APISearchDialogSample.h">
+      <Filter>Qt_generated</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_APISignInDialogSample.h">
+      <Filter>Qt_generated</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>VS_generated</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>VS_generated</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_PLMSettingsSample.h">
+      <Filter>Qt_generated</Filter>
+    </ClInclude>
+    <ClInclude Include="classes\PLMSettingDataSample.h">
+      <Filter>Ui_PLM_Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_CLOPLMSignIn.h">
+      <Filter>GeneratedFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_DesignSuite.h">
+      <Filter>GeneratedFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="CLO_PLUGIN\INFOR\Utilities\Utility.h">
+      <Filter>CLO_PLUGIN\INFOR\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="CLO_PLUGIN\INFOR\Utilities\json.h">
+      <Filter>CLO_PLUGIN\INFOR\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="CLO_PLUGIN\INFOR\Utilities\Definitions.h">
+      <Filter>CLO_PLUGIN\INFOR\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_FabricsResultTable.h">
+      <Filter>GeneratedFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_FabricsSearchDialog.h">
+      <Filter>GeneratedFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_TrimsResultTable.h">
+      <Filter>GeneratedFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_TrimsSearch.h">
+      <Filter>GeneratedFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ColorResultTable.h">
+      <Filter>GeneratedFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ColorSearch.h">
+      <Filter>GeneratedFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ProductResultTable.h">
+      <Filter>GeneratedFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ProductSearch.h">
+      <Filter>GeneratedFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_UpdateProduct.h">
+      <Filter>GeneratedFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="CLO_PLUGIN\INFOR\Utilities\Configuration.h">
+      <Filter>CLO_PLUGIN\INFOR\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_CreateProduct.h">
+      <Filter>GeneratedFiles</Filter>
+    </ClInclude>
+    <ClInclude Include="CLO_PLUGIN\INFOR\Utilities\RestAPIUtility.h">
+      <Filter>CLO_PLUGIN\INFOR\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="CLO_PLUGIN\INFOR\Utilities\DirectoryUtil.h">
+      <Filter>CLO_PLUGIN\INFOR\Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="CLO_PLUGIN\INFOR\Products\ProductUtility.h">
+      <Filter>GeneratedFiles</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="classes\APISearchDialogSample.h">
+      <Filter>Ui_SearchDialog</Filter>
+    </CustomBuild>
+    <CustomBuild Include="classes\APISearchDialogSample.ui">
+      <Filter>Ui_SearchDialog</Filter>
+    </CustomBuild>
+    <CustomBuild Include="classes\APISignInDialogSample.h">
+      <Filter>Ui_SignInDialog</Filter>
+    </CustomBuild>
+    <CustomBuild Include="classes\APISignInDialogSample.ui">
+      <Filter>Ui_SignInDialog</Filter>
+    </CustomBuild>
+    <CustomBuild Include="classes\PLMSettingsSample.h">
+      <Filter>Ui_PLM_Settings</Filter>
+    </CustomBuild>
+    <CustomBuild Include="classes\PLMSettingsSample.ui">
+      <Filter>Ui_PLM_Settings</Filter>
+    </CustomBuild>
+    <CustomBuild Include="classes\CLOFormat.qrc" />
+    <CustomBuild Include="CLO_PLUGIN\INFOR\Authentication\CLOPLMImplementation.h">
+      <Filter>CLO_PLUGIN\INFOR\Authentication</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CLO_PLUGIN\INFOR\Authentication\CLOPLMSignIn.h">
+      <Filter>CLO_PLUGIN\INFOR\Authentication</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CLO_PLUGIN\INFOR\Authentication\CLOPLMSignIn.ui">
+      <Filter>CLO_PLUGIN\INFOR\Authentication</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CLO_PLUGIN\INFOR\DesignSuite\DesignSuite.h">
+      <Filter>CLO_PLUGIN\INFOR\DesignSuite</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CLO_PLUGIN\INFOR\DesignSuite\DesignSuite.ui">
+      <Filter>CLO_PLUGIN\INFOR\DesignSuite</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CLO_PLUGIN\INFOR\Utilities\ComboBoxItem.h">
+      <Filter>CLO_PLUGIN\INFOR\Utilities</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CLO_PLUGIN\INFOR\Products\ProductResultTable.h">
+      <Filter>CLO_PLUGIN\INFOR\Products</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CLO_PLUGIN\INFOR\Products\ProductSearch.h">
+      <Filter>CLO_PLUGIN\INFOR\Products</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CLO_PLUGIN\INFOR\Products\UpdateProduct.h">
+      <Filter>CLO_PLUGIN\INFOR\Products</Filter>
+    </CustomBuild>
+    <CustomBuild Include="PLMResource.qrc" />
+    <CustomBuild Include="CLO_PLUGIN\INFOR\Materials\Fabrics\FabricsResultTable.h">
+      <Filter>CLO_PLUGIN\INFOR\Materials\Fabrics</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CLO_PLUGIN\INFOR\Materials\Fabrics\FabricsResultTable.ui">
+      <Filter>CLO_PLUGIN\INFOR\Materials\Fabrics</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CLO_PLUGIN\INFOR\Materials\Fabrics\FabricsSearchDialog.h">
+      <Filter>CLO_PLUGIN\INFOR\Materials\Fabrics</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CLO_PLUGIN\INFOR\Materials\Fabrics\FabricsSearchDialog.ui">
+      <Filter>CLO_PLUGIN\INFOR\Materials\Fabrics</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CLO_PLUGIN\INFOR\Materials\Trims\TrimsResultTable.h">
+      <Filter>CLO_PLUGIN\INFOR\Materials\Trims</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CLO_PLUGIN\INFOR\Materials\Trims\TrimsResultTable.ui">
+      <Filter>CLO_PLUGIN\INFOR\Materials\Trims</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CLO_PLUGIN\INFOR\Materials\Trims\TrimsSearch.h">
+      <Filter>CLO_PLUGIN\INFOR\Materials\Trims</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CLO_PLUGIN\INFOR\Materials\Trims\TrimsSearch.ui">
+      <Filter>CLO_PLUGIN\INFOR\Materials\Trims</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CLO_PLUGIN\INFOR\Colors\ColorResultTable.h">
+      <Filter>CLO_PLUGIN\INFOR\Colors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CLO_PLUGIN\INFOR\Colors\ColorResultTable.ui">
+      <Filter>CLO_PLUGIN\INFOR\Colors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CLO_PLUGIN\INFOR\Colors\ColorSearch.h">
+      <Filter>CLO_PLUGIN\INFOR\Colors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CLO_PLUGIN\INFOR\Colors\ColorSearch.ui">
+      <Filter>CLO_PLUGIN\INFOR\Colors</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CLO_PLUGIN\INFOR\Products\ProductResultTable.ui">
+      <Filter>CLO_PLUGIN\INFOR\Products</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CLO_PLUGIN\INFOR\Products\ProductSearch.ui">
+      <Filter>CLO_PLUGIN\INFOR\Products</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CLO_PLUGIN\INFOR\Products\UpdateProduct.ui">
+      <Filter>CLO_PLUGIN\INFOR\Products</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CLO_PLUGIN\INFOR\Products\CreateProduct.h">
+      <Filter>CLO_PLUGIN\INFOR\Products</Filter>
+    </CustomBuild>
+    <CustomBuild Include="CLO_PLUGIN\INFOR\Products\CreateProduct.ui">
+      <Filter>CLO_PLUGIN\INFOR\Products</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Ui_SignInDialog">
+      <UniqueIdentifier>{fdef20b5-3d79-4e61-a368-e3f2c6e0b79b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ui_SearchDialog">
+      <UniqueIdentifier>{df831e9f-458b-402a-8927-b4ceabba6dd8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CloApiData">
+      <UniqueIdentifier>{58a28b49-1a2e-411c-b858-1594718f221c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CloApiCommon">
+      <UniqueIdentifier>{a31ba145-027b-4270-9cc1-783a1069768d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="VS_generated">
+      <UniqueIdentifier>{bd0ac53a-ee00-47a0-ad1e-6b6cd1aab4aa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Qt_generated">
+      <UniqueIdentifier>{0d4bbc49-9bf5-434e-b8d9-fcb45728015d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Ui_PLM_Settings">
+      <UniqueIdentifier>{d8e720e4-6a77-4901-8918-bb144d78f398}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="CLO_PLUGIN">
+      <UniqueIdentifier>{50a33963-4788-42b7-adfd-18f63dd44870}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLO_PLUGIN\INFOR">
+      <UniqueIdentifier>{c1d2e7d7-55a6-44fb-b81b-106e87122b10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLO_PLUGIN\INFOR\Authentication">
+      <UniqueIdentifier>{a60a83c9-5dbc-42c6-b1bd-460414dbf0e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLO_PLUGIN\INFOR\DesignSuite">
+      <UniqueIdentifier>{61692b17-b47a-48b7-946a-75985bd3cb3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLO_PLUGIN\INFOR\Products">
+      <UniqueIdentifier>{9f5bbe97-a8df-4328-a803-36c63264d91f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLO_PLUGIN\INFOR\Utilities">
+      <UniqueIdentifier>{ff1ac1a5-1ae5-4737-8f52-69993a39078c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GeneratedFiles">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="CLO_PLUGIN\INFOR\Colors">
+      <UniqueIdentifier>{a3ad7859-2407-4cd7-b16b-7afb98c81a87}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLO_PLUGIN\INFOR\Materials">
+      <UniqueIdentifier>{79c61421-6b52-44e6-94d5-eb14306f87f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLO_PLUGIN\INFOR\Materials\Fabrics">
+      <UniqueIdentifier>{9509f15f-d4f9-4657-8390-62f8cb88b9ab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="CLO_PLUGIN\INFOR\Materials\Trims">
+      <UniqueIdentifier>{a31554e0-1b20-4482-95b5-fcb46fd7cd16}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="CLO_PLUGIN\INFOR\images\512px-Gnome-window-close.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="CLO_PLUGIN\INFOR\images\circle-cropped_material.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="CLO_PLUGIN\INFOR\images\circle-cropped_product.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="CLO_PLUGIN\INFOR\images\clo.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="CLO_PLUGIN\INFOR\images\clo1.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="CLO_PLUGIN\INFOR\images\closingle.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="CLO_PLUGIN\INFOR\images\color.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="CLO_PLUGIN\INFOR\images\colorC.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="CLO_PLUGIN\INFOR\images\colorP.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="CLO_PLUGIN\INFOR\images\GoVise.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="CLO_PLUGIN\INFOR\images\material.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="CLO_PLUGIN\INFOR\images\material.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="CLO_PLUGIN\INFOR\images\product.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="CLO_PLUGIN\INFOR\images\product.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="CLO_PLUGIN\INFOR\images\right.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

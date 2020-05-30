@@ -1,0 +1,166 @@
+[v2.8, May 2020]
+- 	Added "ExportGLTF" and "ExportGLTFW" in Export API
+- 	Added "colorwayCostInfo" key (techpack json v2.2)
+-	Added "spi" and "threadThicknessUnit" keys in subStitchList for topStitchList (techpack json v2.2); changed "threadThickness" from mm to "threadThicknessUnit"
+-	Added "annotation" key for each pattern (techpack json v2.2)
+-	Added "ExportTurntableImages", "ExportTurntableImagesW" in Export API
+-	Added "usedAsTrim" in trimList for OBJ/Trim, graphicInstanceList, patternList, topstitchList (techpack json v2.3)
+
+[v2.7 with CLO 5.2 official release, April 2020]
+-	Added PLM Setting Dialog Sample into Library Windows Sample Demo(LibraryWindowImplementation sample project)
+-	Added "NewProject" in Utility API	
+-	Added "GetAPIMetaDataFromFile" and "GetAPIMetaDataFromFileW" in Fabric API
+-	Added CLO file related API calls; especially for Library Windows Sample Demo in Utility API:
+            IsReadableImageFormatFromExtension, IsReadableImageFormatFromExtensionW
+	IsCLOFileFormatWithTripleThumbnailExtension, IsCLOFileFormatWithTripleThumbnailExtensionW
+-	Added "GetCLOExecutableFolderPath" and "GetCLOExecutableFolderPathW" in Utility API
+-	Added "GetCLOAssetFolderPath" and "GetCLOAssetFolderPathW" in Utility API
+-	Deprecated "GetFabricSize()" and "GetPatternSize()". Please use "GetFabricCount()" and "GetPatternCount()"
+
+[v2.6 with CLO 5.1 6th patch, Jan 2020]
+-	'Graphic Type' and 'Interlining(Bond)' information are added in Techkpack(.json)
+-	Fixed the issue that saving project was failing while running ExportTechpack api call
+-	Fixed tha issue that 'Project Name' and '3D Windows Title' were not updated by ImportZprj
+
+[v2.6 with CLO 5.1 5th patch, Jan 2020]
+-	Added "AddColorSwatch" and "AddColorSwatchW" in Uitlity API. 
+
+[v2.5, Dec 2019]
+- 	Added "GetCustomViewInformation" in Utility API. You can get Camera Matrix and FOV of cusotom views. 
+-	Added a functionality to load .zcmr (Custom View file) with ImportFile() in ImportAPI
+-	Added "SetColorwayName", "SetColorwayNameW", "GetColorwayName", "GetColorwayNameW", "RefreshColorwayDialog" and in Utility API
+-	Added "GetFabricName", "GetColorwayFabricInfo" in FabricAPI
+-	Added a plug-in function for ExportPlugin project - "DoFunctionAferLoadingCLOFile(const char* fileExtenstion)"
+-	Added PatternAPI class with  "GetPatternInformation" call
+-	Moved "GetPatternSize", "GetPatternIndex" from FabricAPI to PatternAPI
+-	Added "GetByteArrayFromStream" in Rest API
+-	Added api calls with 'wstring' type for Unicode in Export API:
+            "ExportZPacW", "ExportZPrjW", "ExportDXFW", "ExportTechPackW", "ExportThumbnail3DW", "ExportSnapshot3DW", "ExportCustomViewSnapshotW", 
+            "ExportRenderingImageW", "ExportSingleColorwayRenderingImageW", "GetFileNameOnRenderingPropertyW", "ExportGarmentInformationW", "ExportTurntableVideoW", 
+            "ExportAnimationVideoW", "GetColorwayNameListW", "GetAvatarNameListW", "GetSizeNameListW", "ExportTechPackToStreamW", "ExportGarmentInformationToStreamW"
+-	Added api calls with 'wstring' type for Unicode in Fabric API:
+            "ExportZFabW", "ExportFabricW", "AddFabricW", "GetFirstFabricTextureNameW", "GetFirstFabricTextureNameW", "ChangeFabricWithJsonW", "ImportXtexFileW", "ApplyXtexFileW", 
+            "GetFabricIndexW", "GetFabricNameW", "GetAPIMetaDataW", "SetAPIMetaDataW", "ChangeMetaDataValueForFabric", "GetColorwayFabricInfoW"
+-	Added api calls with 'wstring' type for Unicode in Import API: "ImportFileW", "ImportZprjW"
+-	Added api calls with 'wstring' type for Unicode in Pattern API: "GetPatternIndexW", "GetPatternInformationW"
+-	Added api calls with 'wstring' type for Unicode in Utility API: 
+	"GetCLOTemporaryFolderPathW", "DisplayMessageBoxW", "GetProjectNameW", "GetProjectFilePathW", "SetProgressW", "GetCustomViewInformationW", "GetMetaDataForCurrentGarmentW"	
+-	Added "stringToMD5" in Utility API
+
+[v2.4, Nov, 2019]
+- 	Added "ExportCustomViewSnapshot" in Export API
+-	Revised "ExportTechPack" & "ExportTechPackW" paramaeters in ExportAPI to use ExportTechpackOption in CloApiData.h
+-	Added "DeleteFabric" in FabricAPI
+-	Added "IsDefaultTab" in LibraryWindowInterface 
+-	Added "GetTabName" in LibraryWindowInterface 
+-	Improved "GetThumbnailInCLOFile" in Utility API (for .sst, .zfab, .zpac, .zprj files)
+-	Removed "CallbackFromWebKit" from ExportPlugin sample
+-	Removed "EditFabricWithJson" from Fabric API (please use ChangeFabricFromJson for this purpose)
+
+[v2.3, Oct 2, 2019]
+-	Added 'bExportTexture' parameter for "ExportTechPack" call in Export API
+-	Renamed and implemented  "AddFabric" from "AddFabricFromJson"
+-	Added "ChangeFabricWithJson" in Fabric API
+-	Added "AssignFabricToPattern" in Fabric API
+-	Added "GetThumbnailInCLOFile" in Utility API
+-	Added "ImportXTexFile" in Fabric API
+-	Added "ApplyXTexFile" in Fabric API
+-	Updated Library Window Implementation project for the Sample Demo
+-	Added "GetMetaDataForCurrentGarment", "SetMetaDataForCurrentGarment", and "ChangeMetaDataValueForCurrentGarment" into Utility API
+
+[v2.2, May 21, 2019]
+-	Added "GetFirstFabricTextureName" in Fabric API
+-	Added "GetFileNameOnRenderingProperty" in Export API
+-	Added "GetTotalRenderImagePaths" in Export API
+-	Added "GetCurrentRenderImagePaths" in Export API
+-	Added "ExportGarmentInformationToStream" in Export API
+-	Fixed the issue that the CLO does not handle properly the file path with "\\" style for Export API, Fabric API, Import API
+              so that Windows shared folder path (\\Nasc_xxx\\... ) can be used in API calls.
+-	Added "ExportZprj" call with bCaptureThumbnail flags in Export API
+-	Added "GetColorwayCount", "GetCurrentColorwayIndex" and "SetCurrentColorwayIndex" calls in Utility API
+
+[v2.1, May 2, 2019]
+- 	Added "trimList" to Tech Pack spec.
+
+[v2.0, Apr, 2019]
+-	New API architecture. 
+              Reconstructed all of API structure to interface/implmentation architecture.
+
+-	Support for Thin/Thick mesh option for "ExportOBJ" function
+-	Added "ImportZPRJ" function in ImportAPI.h
+-	Added "Fabric API" with interfaces / implementations below:
+	"GetFabricCount"
+	"GetCurrentFabricIndex"
+	"ExportZFab"
+	"AddFabricFromJson" interface / not implmented
+
+- 	Added "ExportDXF" function without dialog
+
+[v1.2]
+- 	Added "GetProjectFilePath" function in UtilityAPI.h
+- 	Updated the version of Tech Pack Spec and ExportTechPack function so that it can return the followings as well.
+		- Measurement on Garment (name, length, snapshot)
+		- Graphic/Artwork snapshot with measurement
+		- Print layout snapshot
+		- Pattern info(name, snapshot)
+		- Avatar info(name, gender)
+[v1.1]
+- 	Added "GetProjectName" function in UtilityAPI.h
+- 	Added "GetMajorVersion", "GetMinorVersion", "GetPatchVersion" functions in UtilityAPI.h
+
+[v1.0]
+-	Removed Class Macros like EXPORT_API, IMPORT_API. Now you need to remove all the Class Macros in your previous codes (ex. EXPORT_API.ExportOBJ() -> ExportOBJ())
+-	Added ExportOBJ functions with options. If "options" is given, it exports OBJ according to options, not allowing user for selecting options in Export Dialog. Please refer to ImportExportOption class in ExportAPI.h for setting options.
+-	Added UtilityAPI.h. It includes some utility functions like "Show a message box on CLO for debugging purpose".
+- 	Fixed the bug which the bitmap images are not exported when exporting OBJ with the scene including .ai images. 
+-	Added Plug-in debug log. Please read the manual for details.
+-	Added GetObjectNameTreeToAddAction() and GetPositionIndexToAddAction() functions so that the plug-in developer can control the default action menu position to add the plug-in feature into CLO by using them. 
+-	Revised 'API' folder name to 'CloApi'
+
+[v0.9]
+-	CLO UI changes for Library Windows Interface
+
+[v0.8] 
+-	Changed Messaging protocol in Web API: Changed the specification in JS message to allow the 'empty value'; for now, you'd not use space inside delimiter but '\n' or '\r' only; you'd find the sample in the test.html file inside the package file.
+-	Added ¡°GetColorwayNameList¡± function in ExportAPI
+-	Added ¡°GetAvatarCount¡± function in ExportAPI
+-	Added ¡°GetAvatarNameList¡± function in ExportAPI
+-	Added ¡°GetSizeCount¡± function in ExportAPI
+-	Added ¡°GetCurrentSizeIndex¡± function in ExportAPI
+-	Added ¡°GetSizeNameList¡± function in ExportAPI
+-	Added ¡®Texture List keys with AI file path¡¯ on TechPack
+
+[v0.7] 
+-	Added Library Window API sample code
+-	Minor bug fixes on TechPack
+
+[v0.6]
+-	Added LibraryWindowAPI
+-	Updated Techpack JSON spec to v1.2; code while implementing.
+
+[v0.5]
+-	Added WEBKIT API
+-	Revised REST API (See comments in ¡®RESTAPI.h¡± for details)
+
+[v0.4]
+-	Added ¡°ExportZPac¡± API
+-	Added ¡°ExportZPrj¡± API
+-	Added ¡°ExportOBJ¡± API
+-	Added ¡°ExportDXF¡± API
+-	Added ¡°ExportRenderingImage¡± API
+-	Added ¡°ExportTurntableVideo¡± API
+-	Added ¡°ExportAnimationVideo¡± API
+
+[v0.3]
+-	Added ¡°ExportSnapshot3D¡± API
+-	Added ¡°ExportGarmentInfromation¡± API
+-	Changed the API name from ¡°ExportBOM¡± to ¡°ExportTechPack¡±
+
+[v0.2]
+-	Added REST API
+-	Added ¡°ExportThumbnail3D¡± API
+-	Plug-in Manager in CLO SW
+-	Changed the name of the project file from ¡°ExportBOM¡± to ¡°ExportPlugin¡± as the project will cover all Export API samples
+
+[v0.1]
+-	Added ¡°ExportBOM¡± API

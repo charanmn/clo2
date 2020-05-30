@@ -1,0 +1,75 @@
+{
+  "entities": [
+    {
+      "name": "Colors",
+      "maxResultCount": 40,
+      "client-version": "16.0.15",
+      "searchable_columns": [
+        "PantoneCode",
+        "AltName",
+        "ErpCode",
+        "Code",
+        "NRFCode",
+        "Status",
+        "Name",
+        "Shade",
+        "ColorwayFamilyId"
+      ],
+      "resultTable_columns": [
+        "PantoneCode",
+        "AltName",
+        "ErpCode",
+        "Code",
+        "NRFCode",
+        "Status",
+        "Name",
+        "Shade",
+        "ColorwayFamilyId"
+      ]
+    },
+    {
+      "name": "Trim",
+      "maxResultCount": 40,
+	  "tenants": [
+		"FPLMQACDEV_TST",
+		"FPLMUAT_TST",
+		"LCWAIKIKI_TRN"
+	  ],
+      "searchable_columns": [
+        "Code",
+        "Name",
+        "Description",
+        "Status",
+        "MaterialType",
+        "SeasonId",
+        "BrandId",
+        "DivisionId",
+        "Designer",
+        "MainCategoryId",
+        "CategoryGroup",
+        "TrimCategory"
+      ],
+      "resultTable_columns": [
+        "Code",
+        "Name",
+        "Description",
+        "Status",
+        "MaterialType",
+        "SeasonId",
+        "BrandId",
+        "DivisionId",
+        "Designer"
+      ]
+    },
+    {
+      "name": "Fabric",
+      "maxResultCount": 40
+    },
+    {
+      "name": "Product",
+      "maxResultCount": 40
+    }
+  ],
+  "maximumLogFileSize": 10,
+  "printRestResponse": true
+}
