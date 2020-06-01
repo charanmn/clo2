@@ -4,7 +4,7 @@
    <echo message="Base dir is: ${basedir}"/>
     <target name="compile">
   
-		<exec executable="MSBuild.exe" failonerror="true">
+		<exec executable="msbuild" failonerror="true">
     <arg value="${basedir}\LibraryWindowImplementation.sln" />
     <arg value="/p:Configuration=Release" />
     <arg value="/p:Platform=x64" />
