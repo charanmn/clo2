@@ -5,7 +5,7 @@
     <target name="compile">
   
 		<exec executable="MSBuild.exe" failonerror="true">
-    <arg value="${basedir}\api_sdk_package\CLOAPIInterface\Samples\CloInforPlugin\LibraryWindowImplementation.sln" />
+    <arg value="${basedir}\LibraryWindowImplementation.sln" />
     <arg value="/p:Configuration=Release" />
     <arg value="/p:Platform=x64" />
 </exec>
