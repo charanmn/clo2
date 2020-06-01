@@ -4,7 +4,7 @@
    
     <target name="compile">
   
-		<exec executable="msbuild" failonerror="true">
+		<exec executable="MSBuild.exe" failonerror="true">
     <arg value="CLOAPIInterface\Samples\LibraryWindowImplementation.sln" />
     <arg value="/p:Configuration=Release" />
     <arg value="/p:Platform=x64" />
