@@ -10,7 +10,7 @@
     <arg value="/p:Platform=x64" />
 </exec>
     </target>
-	<echo message=${WORKSPACE} />
+	<echo message="${WORKSPACE}" />
 	<target name="cppcheck" description="C++ code check" depends="compile">
 <echo message="222222222222222222" />
     <exec executable="cppcheck" failonerror="true">
