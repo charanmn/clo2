@@ -1,0 +1,25 @@
+
+
+<project name="CloInforPlugin" default="cppcheck">
+   
+    <target name="compile">
+  
+		<exec executable="msbuild" failonerror="true">
+    <arg value="CLOAPIInterface\Samples\LibraryWindowImplementation.sln" />
+    <arg value="/p:Configuration=Release" />
+    <arg value="/p:Platform=x64" />
+</exec>
+    </target>
+	<echo message="11111111111" />
+	<target name="cppcheck" description="C++ code check" depends="compile">
+<echo message="222222222222222222" />
+    <exec executable="cppcheck" failonerror="true">
+
+      <arg line="--xml --xml-version=2 --enable=all --inconclusive --language=c++ *.*"/>
+
+    <redirector error="cppcheck.xml"/>
+
+    </exec>
+
+</target>
+</project>
